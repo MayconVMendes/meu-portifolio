@@ -12,7 +12,7 @@ header {
 .headerHome {
   display: flex;
   align-items: center;
-  height: 150px;
+  height: 100px;
   justify-content: space-between;
   border-bottom: 2px solid #8b8b8b;
   padding: 0px 30px 0px 30px;
@@ -28,16 +28,11 @@ header {
   text-decoration: none;
   font-size: 35px;
 }
-.headerHome .linkLogo .link:hover {
-  color: red;
-  transition-duration: 0.4s;
-}
 .headerHome .linkLogo .link img {
   width: 30px;
-  fill: red;
 }
-.headerHome .linkLogo .link img:hover {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+.headerHome .linkLogo:hover .link {
+  color: red;
 }
 .headerHome .linksHeader {
   display: flex;
@@ -51,6 +46,12 @@ header {
   color: #000;
   text-decoration: none;
   font-size: 20px;
+}
+.headerHome .linksHeader .linkLi .link img {
+  width: 30px;
+}
+.headerHome .linksHeader .linkLi .link .claro {
+  display: none;
 }
 .headerHome .linksHeader .linkLi .link:hover {
   color: red;

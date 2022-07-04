@@ -17,7 +17,7 @@ header{
 .headerHome {
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 100px;
     justify-content: space-between;
     border-bottom: 2px solid rgb(139, 139, 139);
     padding: 0px 30px 0px 30px;
@@ -30,20 +30,19 @@ header{
             color: #000;
             text-decoration: none;
             font-size: 35px;
-
-            &:hover {
-                color: red;
-                transition-duration: 0.4s;
-            }
-
+            
             img {
                 width: 30px;
-                fill: red;
-
-                &:hover{
-                    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-                }
             }
+        }
+
+        &:hover {
+
+            .link {
+                color: red;
+
+            }
+           
         }
         
         margin-left: 20px;
@@ -60,6 +59,14 @@ header{
                 color: #000;
                 text-decoration: none;
                 font-size: 20px;
+
+                img {
+                    width: 30px;
+                }
+
+                .claro {
+                    display: none;
+                }
 
                 &:hover {
                     color: red;
